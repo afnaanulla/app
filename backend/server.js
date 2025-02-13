@@ -19,5 +19,5 @@ app.use('/api/subjects', subjectRoutes);
 app.use('/api/feedback', feedbackRoutes);
 app.use('/api/ratings', ratingRoutes);
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 7000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
